@@ -25,6 +25,8 @@ public class Main {
 
 		System.out.println("El numero es capicua?: ");
 		System.out.println(mates.esCapicua(num));
+	
+	lee.close();
 	}
 
 }

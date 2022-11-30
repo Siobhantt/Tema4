@@ -19,18 +19,18 @@ public class Numeros {
 	
 	boolean result;
 	int aux;
-    int n=0;
+    
     int inverso=0;
     int cifra;
     
-    aux=n;
+    aux=numero;
     while(aux!=0){
         cifra = aux % 10;
         aux/=10;
         inverso=(inverso*10)+cifra;
     }
     //comparar ambas variables para saber si el numero es capicua
-    if(inverso==n){
+    if(inverso==numero){
        result = true;
     }else {
         result = false;

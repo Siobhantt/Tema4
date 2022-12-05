@@ -1,29 +1,26 @@
 package ejercicio4;
-/*Crea una clase denominada Operaciones,
- *  la cual va a contener una función no estática por cada una de las operaciones básicas
- *  : suma, resta, multiplicación y división. 
- *  Es decir, 4 funciones. Las variables con las que se van a realizar estas operaciones son globales no estáticas
- *  . Es decir, estas funciones no recibirán ningún parámetro de entrada.
- *   Ten en cuenta las características de estas funciones y 
- * la existencia de las variables globales para realizar las pruebas desde el método main().*/
+
 public class Operaciones {
-	
+	//Establecemos las variables que vamos a utilizar
 	int n1, n2; 
 	
+	
+	//Para crear los metodos usaremos la funciones declaradas al prinipio de esta clase
+	/*Estamos creando varias funciones no staticas para luego e el main crear un objeto y llamar la funcion que necesitemos*/
 	int suma () {
-		int suma = n1 + n2;
+		int suma = n1 + n2;//hacemos la operacion de suma 
 	
 		return suma;
 	}
 	
 	int resta () {
-		int resta = n1 - n2;
+		int resta = n1 - n2;//operacion de resta
 	
 		return resta;
 	}
 	
 	int multiplicacion () {
-		int multiplicacion = n1 * n2;
+		int multiplicacion = n1 * n2;//operacion de multiplicacion
 	
 		return multiplicacion;
 	}
@@ -31,11 +28,11 @@ public class Operaciones {
 	int division () {
 		
 		int division = 0;
-		
+		//si que el segundo numero que seria el divisor es distinto a 0 entonces ejecutamos la division
 		if(n2!=0) {
 			division = n1 / n2;
 		}
-		else {
+		else {//en caso contrario mostramos un error
 			System.out.println("error");
 		}
 	return division;

@@ -29,9 +29,16 @@ public class Operaciones {
 	}
 	
 	int division () {
-		int division = n1 / n2;
-	
-		return division;
+		
+		int division = 0;
+		
+		if(n2!=0) {
+			division = n1 / n2;
+		}
+		else {
+			System.out.println("error");
+		}
+	return division;
 	}
 	
 }
